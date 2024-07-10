@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: auto;
+}
+body{
+    font-family: "Rubik", sans-serif;
+}
+/* Start Components */
+:root{
+    --main-color:#BB7427;
+    --second-color:#EEEEEE;
+    --third-color:#EEEEEE;
+}
+.container{
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+@media (min-width:768px) {
+    .container{
+        width: 750px;
+    }
+}
+@media (min-width:991px) {
+    .container{
+        width: 970px;
+    }
+}
+@media (min-width:1200px) {
+    .container{
+        width: 1170px;
+    }
+}
+/* End Components */
+
+
+/* Start Home */
+/* End Home */
+
+
+/* Start About */
+/* End About */
+
+
+/* Start Services */
+/* End Services */
+
+
+/* Start Subscriptions */
+/* End Subscriptions */
+
+
+/* Start Contact */
+/* End Contact */
