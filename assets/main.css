@@ -16,7 +16,7 @@ body{
 :root{
     --main-color:#BB7427;
     --second-color:#EEEEEE;
-    --third-color:#EEEEEE;
+    --third-color:#111;
 }
 .container{
     padding-left: 15px;
@@ -39,7 +39,37 @@ body{
         width: 1170px;
     }
 }
+.page-header{
+    background-image: url(header-landing.webp);
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.page-header h1{
+    text-transform: uppercase;
+    font-size: 4em;
+    font-weight: 400;
+    color: var(--second-color);
+}
+.page-header a{
+    text-decoration: none;
+    color: var(--second-color);
+}
+.page-header span{
+    opacity: 0.6;
+}
 /* End Components */
+
+
+/* Start Nav */
+/* End Nav */
+
+
+/* Start Footer */
+/* End Footer */
 
 
 /* Start Home */
