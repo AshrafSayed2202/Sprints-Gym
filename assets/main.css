@@ -256,6 +256,31 @@ footer .white-txt{
 
 
 /* Start Home */
+.image-slider{
+    height: 80vh;
+    overflow: hidden;
+    position: relative;
+}
+.hero-text{
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    z-index: 5;
+}
+.image-slider .colored-txt{
+    color: var(--main-color);
+    font-weight: bold;
+    font-size: 1.1em;
+}
+.image-slider .hero-header{
+    font-size: 3.5em;
+    font-weight: bold;
+    color: var(--second-color);
+}
+.image-slider p{
+    color: var(--second-color);
+    margin-bottom: 35px;
+}
 /* End Home */
 
 
@@ -309,12 +334,8 @@ footer .white-txt{
 
 
 .contact-map{
-display: flex;
-justify-content: center;
- 
-    margin-top: 50px;
-}
-.upper-foot{
+    display: flex;
+    justify-content: center;
     margin-top: 50px;
 }
 /* End Contact */
