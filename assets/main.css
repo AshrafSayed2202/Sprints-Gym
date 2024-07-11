@@ -442,10 +442,45 @@ footer .white-txt{
 
 
 /* Start About */
+.about-story {
+    display:flex ;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+}
+.left{
+    size: 20px;
+ margin-top: 7%;
+ margin-left: 7%;
+}
+.right h6{
+    margin-top: 15px;
+    
+}
+.rectangle{
+    background: var(--gradiant);
+    display: flex;
+}
+.rectangle .about-number {
+        color :var(--second-color) ;
+}
+.rectangle .about-number span {
+      font-size: 3.5em ;
+      font-weight: 600 ;   
+      padding-inline: 40%; 
+      padding-bottom: 50px;
+}
+.rectangle .about-number p {
+    font-size: 1.5em ;
+    padding-inline: 50px;
+}
+
+
 /* End About */
 
 
 /* Start Services */
+
 /* End Services */
 
 
@@ -544,7 +579,7 @@ footer .white-txt{
     font-weight: 600;
 }
 
-p {
+.membership-item p {
     line-height: 26px;
     margin: 0 0 15px 0;
 }
