@@ -59,6 +59,7 @@ body{
     color: var(--second-color);
 }
 .page-header span{
+    color: var(--second-color);
     opacity: 0.6;
 }
 .main-btn{
