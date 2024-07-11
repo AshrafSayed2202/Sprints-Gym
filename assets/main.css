@@ -6,6 +6,7 @@
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
+
 html{
     scroll-behavior: auto;
 }
@@ -17,8 +18,11 @@ body{
     --main-color:#f67831;
     --second-color:#EEEEEE;
     --third-color:#111;
+    --gradiant:linear-gradient(to right, #eb3c5a, #f67831)
 }
+
 .container{
+    width: 100%;
     padding-left: 15px;
     padding-right: 15px;
     margin-left: auto;
@@ -221,8 +225,112 @@ footer .white-txt{
 /* End Services */
 
 
-/* Start Subscriptions */
-/* End Subscriptions */
+/* Start Memberships */
+.row {
+    display: flex ;
+    justify-content: center;
+    align-items: center;
+}
+
+.col-title {
+    margin-top: 70px;
+    margin-bottom: 70px;
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+}
+
+.title {
+    font-size: 25px;
+    text-transform: uppercase;
+}
+
+.col-mi {
+    position: relative;
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.membership-item {
+    text-align: center;
+    background: #FFFFFF;
+    box-shadow: 0px 15px 49px rgba(0, 0, 0, 0.15);
+    border-radius: 20px;
+}
+
+.mi-title {
+    background: var(--gradiant);
+    border-radius: 20px 20px 0 0;
+    padding: 25px 0;
+    position: relative;
+    margin-bottom: 38px;
+}
+
+.mi-title h4 {
+    font-weight:600;
+    text-transform: uppercase;
+}
+
+.mi-title ::after {
+    position: absolute;
+    background: var(--gradiant);
+    left: 50%;
+    transform: translateX(-50%);
+    clip-path: polygon(0% 0%, 50% 100%, 50% 100%, 100% 0%);
+    bottom: -14px;
+    width: 30px;
+    height: 15px;
+    content: "";
+}
+
+.mi-price {
+    font-size: 40px;
+    color: #f15d44;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.mi-price span {
+    font-size: 16px;
+    color: #6b6b6b;
+    font-weight: 400;
+}
+
+.membership-item ul {
+    margin-bottom: 27px;
+    padding-bottom: 27px;
+}
+
+.membership-item ul li {
+    list-style: none;
+    font-size: 16px;
+    line-height: 70px;
+}
+
+.membership-item ul li p {
+    margin-bottom: 0;
+    color: #6b6b6b;
+}
+
+.membership-item ul li span {
+    color: #111111;
+    font-weight: 600;
+}
+
+p {
+    line-height: 26px;
+    margin: 0 0 15px 0;
+}
+
+.para {
+    text-align: center;
+    margin-bottom: 60px;
+    margin-top: 70px;
+}
+/* End Memberships */
 
 
 /* Start Contact */
