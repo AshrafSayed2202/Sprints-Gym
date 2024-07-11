@@ -442,47 +442,75 @@ footer .white-txt{
 
 
 /* Start About */
- .about-story { 
+ .about-us { 
     display:flex ;
     justify-content: center;
     align-items: center;
     gap: 60px;
+    margin-top: 5%;
  }
 .left{
     size: 20px;
  margin-top: 7%;
  margin-left: 7%;
 }
-.right h6{
+.about-us-img{
+    display:flex ;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+padding-left: 40px;
+}
+
+.about-us-txt h1{
+text-align: center;
+color: #f67831;
+
+}
+.about-us-txt h3{
+font-style:italic;;
+text-align: center;
+}
+
+.about-us-txt h4{
     margin-top: 15px;
+    margin-right: 7%;
+    margin-bottom: 20px;
+    width: 700px;
+    font-size: 1em;
+    font-weight: lighter;
+    text-align: center;
+    
     
 }
 .rectangle{
     background: var(--gradiant);
     display: flex;
-    margin-left: 10%;
-    margin-right: 10%;
-    margin-top: 5%;
-    width : about-number calc(100% /3);
+    margin-top: 5%;  
     flex-wrap: wrap;
     text-align: center;
-
+  
 }
-
 .rectangle .about-number {
     color :var(--second-color) ;
+    width :  calc(100% /3);
+    padding-top: 40px;
+    padding-bottom: 30px;
+     
 }
-
 .rectangle .about-number span {
       font-size: 3.5em ;
       font-weight: 600 ;   
-      padding-inline: 70px; 
-      padding-bottom: 65px;
+      padding-inline: 50px; 
+          
 }
 .rectangle .about-number p {
     font-size: 1em ;
     padding-inline: 50px;
+   
+    
 }
+
 .gym-award{
     display: flex;
     align-items: center;
@@ -504,14 +532,19 @@ footer .white-txt{
  margin-right: 7%;
 }
 
-.gym-award-txt h6{
+.gym-award-txt h1{
+    text-align: center;
+    color: #f67831;
+}
+
+.gym-award-txt h4{
     margin-top: 15px;
     margin-right: 7%;
     margin-bottom: 20px;
     width: 700px;
     font-size: 1em;
-    
-    
+    text-align: center;
+    font-weight: lighter;
 }
 
 
