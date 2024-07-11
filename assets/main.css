@@ -13,12 +13,15 @@ html{
 body{
     font-family: "Rubik", sans-serif;
 }
+img{
+    object-fit: cover;
+}
 /* Start Components */
 :root{
     --main-color:#f67831;
     --second-color:#EEEEEE;
     --third-color:#111;
-    --gradiant:linear-gradient(to right, #eb3c5a, #f67831)
+    --gradiant:linear-gradient(to right, #eb3c5a, #f67831);
 }
 
 .container{
@@ -78,6 +81,10 @@ body{
     z-index: 5;
     outline: none;
     border: none;
+    transition: all 0.3s;
+}
+.main-btn:hover{
+    scale: 1.1;
 }
 /* End Components */
 
@@ -142,7 +149,6 @@ footer{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: c;
     position: relative;
     width: 50%;
     height: 400px;
@@ -163,6 +169,12 @@ footer{
 }
 .upper-foot-half:last-child{
     background-image: url(footer-banner-2.webp);
+}
+.upper-foot-half:first-child,
+.upper-foot-half:last-child{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 footer .colored-txt{
     color: var(--main-color);
@@ -253,7 +265,7 @@ footer .white-txt{
     cursor: pointer;
 }
 .foot-socials li:hover{
-    background-color: var(--main-color);
+    background: var(--gradiant);
 }
 /* End Footer */
 
@@ -283,6 +295,148 @@ footer .white-txt{
 .image-slider p{
     color: var(--second-color);
     margin-bottom: 35px;
+}
+.home-about{
+    display: flex;
+    gap: 50px;
+    margin: 120px 0;
+}
+.home-about-pic{
+    background: url(about-pic.webp);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.home-about-txt,
+.home-about-pic{
+    width: 50%;
+}
+.home-about-txt .about-p{
+    opacity: 0.7;
+}
+.home-about-txt .about-name{
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: 10px 0;
+}
+.home-about-txt .colored-txt{
+    color: var(--main-color);
+}
+.gym-plans{
+    display: flex;
+}
+.gym-plan-pic,
+.gym-p-plans{
+    width: 50%;
+}
+.gym-plan-pic img{
+    width: 100%;
+}
+.gym-p-plans{
+    display: flex;
+}
+.first-plans,
+.second-plans{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 0 50px;
+    color: var(--second-color);
+}
+.first-plans{
+    background-color: #222;
+}
+.second-plans{
+    background-color: #111;
+}
+.gym-p-plans h3{
+    margin: 25px 0;
+}
+.gym-p-plans p{
+    opacity: 0.6;
+}
+.trainers-sec{
+    padding: 120px 0 200px;
+    background-color: var(--second-color);
+}
+.trainers-sec h1{
+    text-align: center;
+    margin-bottom: 60px;
+}
+.trainers-container{
+    display: flex;
+    gap: 25px;
+}
+.single-trainer-item {
+    position: relative;
+    width: calc(100% / 3);
+}
+.single-trainer-item img{
+    min-width: 100%;
+}
+.single-trainer-item .trainer-text {
+    position: absolute;
+    left: 50%;
+    bottom: -55px;
+    text-align: center;
+    background: #ffffff;
+    width: 310px;
+    margin: 0 auto;
+    -webkit-transform: translateX(-155px);
+    -ms-transform: translateX(-155px);
+    transform: translateX(-155px);
+    -webkit-box-shadow: 0px 3px 4px 0px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 3px 4px 0px rgba(0, 0, 0, 0.15);
+    padding: 20px 30px 18px;
+    height: 90px;
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+    overflow: hidden;
+}
+.single-trainer-item:hover .trainer-text {
+    height: 250px;
+    bottom: -90px;
+    padding: 26px 30px 30px;
+    -webkit-box-shadow: 0px 10px 49px 0px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 10px 49px 0px rgba(0, 0, 0, 0.15);
+}
+.single-trainer-item:hover .trainer-text p {
+    opacity: 1;
+}
+.single-trainer-item .trainer-text p {
+    margin-top: 7px;
+    opacity: 0;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+.single-trainer-item:hover .trainer-text .trainer-social {
+    opacity: 1;
+    visibility: visible;
+}
+.single-trainer-item .trainer-text .trainer-social {
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+.single-trainer-item .trainer-text .trainer-social a:last-child {
+    margin-right: 0;
+}
+.single-trainer-item .trainer-text .trainer-social a {
+    display: inline-block;
+    font-size: 17px;
+    color: #111111;
+    margin-right: 25px;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+.single-trainer-item .trainer-text .trainer-social a:hover {
+    color: var(--main-color);
 }
 /* End Home */
 
@@ -397,7 +551,7 @@ footer .white-txt{
     text-transform: uppercase;
 }
 
-.mi-title ::after {
+.mi-title::after {
     position: absolute;
     background: var(--gradiant);
     left: 50%;
