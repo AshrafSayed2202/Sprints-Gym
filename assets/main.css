@@ -313,7 +313,7 @@ footer .white-txt{
 .rectangle .about-number span {
       font-size: 3.5em ;
       font-weight: 600 ;   
-      padding-inline: 40px; 
+      padding-inline: 40%; 
       padding-bottom: 50px;
 }
 .rectangle .about-number p {
