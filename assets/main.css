@@ -288,12 +288,12 @@ footer .white-txt{
 
 
 /* Start About */
-.about-story {
+ .about-story { 
     display:flex ;
     justify-content: center;
     align-items: center;
     gap: 60px;
-}
+ }
 .left{
     size: 20px;
  margin-top: 7%;
@@ -313,12 +313,30 @@ footer .white-txt{
 .rectangle .about-number span {
       font-size: 3.5em ;
       font-weight: 600 ;   
-      padding-inline: 40%; 
-      padding-bottom: 50px;
+      padding-inline: 70px; 
+      padding-bottom: 65px;
 }
 .rectangle .about-number p {
-    font-size: 1.5em ;
+    font-size: 1em ;
     padding-inline: 50px;
+}
+
+ .gym-award-img {
+    
+    display:flex ;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+ }
+ .left{
+    size: 20px;
+ margin-top: 7%;
+ margin-right: 7%;
+}
+
+.right h6{
+    margin-top: 15px;
 }
 
 
