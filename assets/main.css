@@ -460,10 +460,19 @@ footer .white-txt{
 .rectangle{
     background: var(--gradiant);
     display: flex;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 5%;
+    width : about-number calc(100% /3);
+    flex-wrap: wrap;
+    text-align: center;
+
 }
+
 .rectangle .about-number {
-        color :var(--second-color) ;
+    color :var(--second-color) ;
 }
+
 .rectangle .about-number span {
       font-size: 3.5em ;
       font-weight: 600 ;   
@@ -474,7 +483,13 @@ footer .white-txt{
     font-size: 1em ;
     padding-inline: 50px;
 }
-
+.gym-award{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
  .gym-award-img {
     
     display:flex ;
@@ -489,8 +504,14 @@ footer .white-txt{
  margin-right: 7%;
 }
 
-.right h6{
+.gym-award-txt h6{
     margin-top: 15px;
+    margin-right: 7%;
+    margin-bottom: 20px;
+    width: 700px;
+    font-size: 1em;
+    
+    
 }
 
 
