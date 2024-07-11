@@ -67,7 +67,7 @@ body{
     opacity: 0.6;
 }
 .main-btn{
-    background-color: var(--main-color);
+    background: var(--gradiant);
     color: var(--second-color);
     text-transform: capitalize;
     text-align: center;
@@ -76,11 +76,57 @@ body{
     padding: 12px 35px;
     width: fit-content;
     z-index: 5;
+    outline: none;
+    border: none;
 }
 /* End Components */
 
 
 /* Start Nav */
+nav{
+    position: fixed;
+    top: 0;
+    z-index: 5;
+    width: 100%;
+    background: linear-gradient(#3030304b,#3030304b);
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+nav ul li::after{
+    content: "";
+    width: 100%;
+    height: 2px;
+    background: var(--gradiant);
+    display: block;
+    transition: all 0.3s;
+    opacity: 0;
+    margin-top: 3px;
+}
+nav ul li:hover::after{
+    opacity: 1;
+}
+nav ul a{
+    text-decoration: none;
+    color: var(--second-color);
+    font-weight: bold;
+}
+nav figure{
+    color: var(--second-color);
+    font-size: 2.2em;
+    font-weight: 700;
+}
+nav figure span{
+    color: var(--main-color);
+}
 /* End Nav */
 
 
@@ -209,7 +255,6 @@ footer .white-txt{
 .foot-socials li:hover{
     background-color: var(--main-color);
 }
-
 /* End Footer */
 
 
@@ -334,4 +379,49 @@ p {
 
 
 /* Start Contact */
+.contact_container {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    margin-top: 50px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: calc(100% - 20px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    margin-top: 5px;
+}
+
+.form-group textarea {
+    height: 150px;
+    resize: vertical;
+}
+
+
+.contact-map{
+display: flex;
+justify-content: center;
+ 
+    margin-top: 50px;
+}
+.upper-foot{
+    margin-top: 50px;
+}
 /* End Contact */
