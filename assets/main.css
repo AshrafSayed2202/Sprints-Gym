@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
 * {
     margin: 0;
     padding: 0;
@@ -11,11 +10,9 @@
 html {
     scroll-behavior: auto;
 }
-
 body {
     font-family: "Rubik", sans-serif;
 }
-
 img {
     object-fit: cover;
 }
@@ -23,7 +20,7 @@ img {
 /* Start Components */
 :root {
     --main-color: #f67831;
-    --second-color: #EEEEEE;
+    --second-color: #eeeeee;
     --third-color: #111;
     --gradiant: linear-gradient(to right, #eb3c5a, #f67831);
 }
@@ -35,25 +32,21 @@ img {
     margin-left: auto;
     margin-right: auto;
 }
-
-@media (min-width:768px) {
+@media (min-width: 768px) {
     .container {
         width: 750px;
     }
 }
-
-@media (min-width:991px) {
+@media (min-width: 991px) {
     .container {
         width: 970px;
     }
 }
-
-@media (min-width:1200px) {
+@media (min-width: 1200px) {
     .container {
         width: 1170px;
     }
 }
-
 .page-header {
     background-image: url(header-landing.webp);
     width: 100%;
@@ -63,24 +56,20 @@ img {
     justify-content: center;
     align-items: center;
 }
-
 .page-header h1 {
     text-transform: uppercase;
     font-size: 4em;
     font-weight: 400;
     color: var(--second-color);
 }
-
 .page-header a {
     text-decoration: none;
     color: var(--second-color);
 }
-
 .page-header span {
     color: var(--second-color);
     opacity: 0.6;
 }
-
 .main-btn {
     background: var(--gradiant);
     color: var(--second-color);
@@ -95,13 +84,11 @@ img {
     border: none;
     transition: all 0.3s;
 }
-
 .main-btn:hover {
     scale: 1.1;
 }
 
 /* End Components */
-
 
 /* Start Nav */
 nav {
@@ -110,21 +97,19 @@ nav {
     z-index: 5;
     width: 100%;
     background: linear-gradient(#3030304b, #3030304b);
+    backdrop-filter: blur(5.5px);
 }
-
 .nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 15px 0;
 }
-
 nav ul {
     list-style: none;
     display: flex;
     gap: 30px;
 }
-
 nav ul li::after {
     content: "";
     width: 100%;
@@ -135,40 +120,32 @@ nav ul li::after {
     opacity: 0;
     margin-top: 3px;
 }
-
 nav ul li:hover::after {
     opacity: 1;
 }
-
 nav ul a {
     text-decoration: none;
     color: var(--second-color);
     font-weight: bold;
 }
-
 nav figure {
     color: var(--second-color);
     font-size: 2.2em;
     font-weight: 700;
 }
-
 nav figure span {
     color: var(--main-color);
 }
 
 /* End Nav */
 
-
 /* Start Footer */
 footer {
     color: var(--second-color);
-
 }
-
 .upper-foot {
     display: flex;
 }
-
 .upper-foot-half {
     display: flex;
     flex-direction: column;
@@ -178,7 +155,6 @@ footer {
     height: 400px;
     padding-left: 50px;
 }
-
 .upper-foot-half::after {
     content: "";
     position: absolute;
@@ -189,11 +165,9 @@ footer {
     height: 60%;
     transform: translate(-50%, -50%);
 }
-
 .upper-foot-half:first-child {
     background-image: url(footer-banner-1.webp);
 }
-
 .upper-foot-half:last-child {
     background-image: url(footer-banner-2.webp);
 }
@@ -204,42 +178,34 @@ footer {
     background-position: center;
     background-size: cover;
 }
-
 footer .colored-txt {
     color: var(--main-color);
     margin-bottom: 30px;
     font-size: 1.2em;
 }
-
 footer .white-header {
     font-weight: 600;
     font-size: 2.6em;
 }
-
 footer .white-txt {
     margin-bottom: 30px;
 }
-
 .lower-foot {
     background-color: var(--third-color);
     height: 400px;
     padding: 40px;
 }
-
 .lower-foot .contacts {
     display: flex;
 }
-
 .lower-foot .contacts div {
     width: calc(100% / 3);
     display: flex;
     flex-direction: column;
 }
-
 .lower-foot .colored-txt {
     font-size: small;
 }
-
 .lower-foot .footer-mail {
     background-image: url(header-landing.webp);
     background-position: center;
@@ -250,57 +216,46 @@ footer .white-txt {
     padding: 35px;
     margin-bottom: 30px;
 }
-
 .lower-foot .lower-footer-txt {
     display: flex;
     flex-direction: column;
 }
-
 .lower-foot .lower-footer-txt .white-header {
     font-size: 2em;
 }
-
 .lower-foot .lower-footer-txt .white-txt {
     margin: 0;
 }
-
 .footer-input {
     height: 50px;
     display: flex;
 }
-
 .lower-foot .main-btn {
     padding: 15px 25px;
     height: 100%;
 }
-
 .lower-foot input {
     padding: 15px;
     height: 100%;
     outline: none;
     border: none;
 }
-
 .copyright a {
     color: var(--second-color);
 }
-
 .tech-titans:hover {
     color: var(--main-color);
 }
-
 .copyright {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-
 .foot-socials {
     list-style: none;
     display: flex;
     gap: 10px;
 }
-
 .foot-socials li {
     background-color: #64646457;
     width: 40px;
@@ -311,13 +266,11 @@ footer .white-txt {
     border-radius: 50%;
     cursor: pointer;
 }
-
 .foot-socials li:hover {
     background: var(--gradiant);
 }
 
 /* End Footer */
-
 
 /* Start Home */
 .image-slider {
@@ -325,37 +278,31 @@ footer .white-txt {
     overflow: hidden;
     position: relative;
 }
-
 .hero-text {
     position: absolute;
     top: 50%;
     left: 25%;
     z-index: 5;
 }
-
 .image-slider .colored-txt {
     color: var(--main-color);
     font-weight: bold;
     font-size: 1.1em;
 }
-
 .image-slider .hero-header {
     font-size: 3.5em;
     font-weight: bold;
     color: var(--second-color);
 }
-
 .image-slider p {
     color: var(--second-color);
     margin-bottom: 35px;
 }
-
 .home-about {
     display: flex;
     gap: 50px;
     margin: 120px 0;
 }
-
 .home-about-pic {
     background: url(about-pic.webp);
     background-size: cover;
@@ -368,21 +315,17 @@ footer .white-txt {
 .home-about-pic {
     width: 50%;
 }
-
 .home-about-txt .about-p {
     opacity: 0.7;
 }
-
 .home-about-txt .about-name {
     font-size: 1.5em;
     font-weight: bold;
     margin: 10px 0;
 }
-
 .home-about-txt .colored-txt {
     color: var(--main-color);
 }
-
 .gym-plans {
     display: flex;
 }
@@ -391,11 +334,9 @@ footer .white-txt {
 .gym-p-plans {
     width: 50%;
 }
-
 .gym-plan-pic img {
     width: 100%;
 }
-
 .gym-p-plans {
     display: flex;
 }
@@ -408,33 +349,26 @@ footer .white-txt {
     padding: 0 50px;
     color: var(--second-color);
 }
-
 .first-plans {
     background-color: #222;
 }
-
 .second-plans {
     background-color: #111;
 }
-
 .gym-p-plans h3 {
     margin: 25px 0;
 }
-
 .gym-p-plans p {
     opacity: 0.6;
 }
-
 .trainers-sec {
     padding: 120px 0 200px;
     background-color: var(--second-color);
 }
-
 .trainers-sec h1 {
     text-align: center;
     margin-bottom: 60px;
 }
-
 .trainers-container {
     display: flex;
     gap: 25px;
@@ -444,7 +378,6 @@ footer .white-txt {
     position: relative;
     width: calc(100% / 3);
 }
-
 .single-trainer-item img {
     min-width: 100%;
 }
@@ -523,7 +456,6 @@ footer .white-txt {
 
 /* End Home */
 
-
 /* Start About */
 .about-us {
     display: flex;
@@ -532,13 +464,11 @@ footer .white-txt {
     gap: 60px;
     margin-top: 5%;
 }
-
 .left {
     size: 20px;
     margin-top: 7%;
     margin-left: 7%;
 }
-
 .about-us-img {
     display: flex;
     justify-content: center;
@@ -550,12 +480,9 @@ footer .white-txt {
 .about-us-txt h1 {
     text-align: center;
     color: #f67831;
-
 }
-
 .about-us-txt h3 {
     font-style: italic;
-    ;
     text-align: center;
 }
 
@@ -567,41 +494,29 @@ footer .white-txt {
     font-size: 1em;
     font-weight: lighter;
     text-align: center;
-
-
 }
-
 .rectangle {
     background: var(--gradiant);
     display: flex;
     margin-top: 5%;
     flex-wrap: wrap;
     text-align: center;
-
 }
-
 .rectangle .about-number {
     color: var(--second-color);
-    width: calc(100% /3);
+    width: calc(100% / 3);
     padding-top: 40px;
     padding-bottom: 30px;
-
 }
-
 .rectangle .about-number span {
     font-size: 3.5em;
     font-weight: 600;
     padding-inline: 50px;
-
 }
-
 .rectangle .about-number p {
     font-size: 1em;
     padding-inline: 50px;
-
-
 }
-
 .gym-award {
     display: flex;
     align-items: center;
@@ -609,27 +524,21 @@ footer .white-txt {
     margin-top: 5%;
     margin-bottom: 5%;
 }
-
 .gym-award-img {
-
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 10px;
-
 }
-
 .left {
     size: 20px;
     margin-top: 7%;
     margin-right: 7%;
 }
-
 .gym-award-txt h1 {
     text-align: center;
     color: #f67831;
 }
-
 .gym-award-txt h4 {
     margin-top: 15px;
     margin-right: 7%;
@@ -639,10 +548,7 @@ footer .white-txt {
     text-align: center;
     font-weight: lighter;
 }
-
-
 /* End About */
-
 
 /* Start Services */
 
@@ -743,84 +649,8 @@ footer .white-txt {
     border-radius: 10px;
 }
 
-/* .container-services {
-    width: 50%;
-    margin: auto;
-    display: flex;
-}
-
-.personalTrainingSection,
-.nutritionSection {
-    width: 70%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-}
-
-.personalTrainingSection img,
-.nutritionSection img {
-    width: 100%;
-    border-radius: 10px;
-} */
-
-/* .trainingImg,
-.nutritionImg {
-    position: relative;
-    width: fit-content;
-    overflow: hidden;
-}
 
 
-.trainingContext,
-.nutritionContext {
-    background-color: rgba(0, 0, 0, 0.5);
-    position: absolute; */
-    /* bottom: -32%; comment */
-    /* bottom: -27%;
-    right: 0;
-    left: 0;
-    color: var(--second-color);
-    transition: position 1s;
-    height: 35%;
-    transition: bottom 0.7s;
-} */
-
-/* .personalTrainingSection,
-.nutritionSection {
-    border: white 10px solid;
-}
-
-.trainingContext h3,
-.nutritionContext h3 {
-    color: var(--main-color);
-    margin: 10px;
-}
-
-.trainingContext p,
-.nutritionContext p{
-    margin: 10px;
-}
-
-.personalTrainingSection:hover .trainingContext {
-    bottom: 0;
-}
-
-.nutritionSection:hover .nutritionContext {
-    bottom: 0;
-}
-
-.trainingContext button,
-.nutritionContext button {
-    border: transparent;
-    background: var(--gradiant);
-    color: var(--second-color);
-    padding: 10px;
-    border-radius: 20px;
-} */
-/* End training Part */
-/* Start Class sessions */
 
 .classesPart{
     margin: 50px;
@@ -893,30 +723,12 @@ footer .white-txt {
 }
 
 
-/* End Class sessions */
 
 
 
 
 
 /* End Services */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* Start Memberships */
 .row {
@@ -949,7 +761,7 @@ footer .white-txt {
 
 .membership-item {
     text-align: center;
-    background: #FFFFFF;
+    background: #ffffff;
     box-shadow: 0px 15px 49px rgba(0, 0, 0, 0.15);
     border-radius: 20px;
 }
@@ -965,6 +777,7 @@ footer .white-txt {
 .mi-title h4 {
     font-weight: 600;
     text-transform: uppercase;
+    color: var(--second-color);
 }
 
 .mi-title::after {
@@ -1026,7 +839,6 @@ footer .white-txt {
 
 /* End Memberships */
 
-
 /* Start Contact */
 .contact_container {
     max-width: 600px;
@@ -1063,11 +875,9 @@ footer .white-txt {
     resize: vertical;
 }
 
-
 .contact-map {
     display: flex;
     justify-content: center;
     margin-top: 50px;
 }
-
 /* End Contact */
