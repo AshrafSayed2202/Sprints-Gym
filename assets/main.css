@@ -132,6 +132,7 @@ nav ul a {
     text-decoration: none;
     color: var(--second-color);
     font-weight: bold;
+    padding: 5px;
 }
 nav figure {
     color: var(--second-color);
@@ -298,7 +299,7 @@ footer .white-txt {
     position: absolute;
     top: 50%;
     left: 25%;
-    z-index: 5;
+    z-index: 2;
 }
 .image-slider .colored-txt {
     color: var(--main-color);
