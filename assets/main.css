@@ -80,7 +80,7 @@ img {
     cursor: pointer;
     padding: 12px 35px;
     width: fit-content;
-    z-index: 5;
+    z-index: 2;
     outline: none;
     border: none;
     transition: all 0.3s;
@@ -207,11 +207,12 @@ footer .white-txt {
 }
 .lower-foot {
     background-color: var(--third-color);
-    height: 400px;
+    min-height: 400px;
     padding: 40px;
 }
 .lower-foot .contacts {
     display: flex;
+    gap: 15px;
 }
 .lower-foot .contacts div {
     width: calc(100% / 3);
