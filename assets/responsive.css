@@ -1,0 +1,26 @@
+@media (width < 768px) {
+    nav {
+        padding: 0 25px;
+    }
+    .nav-btn {
+        display: block;
+    }
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+        position: fixed;
+        background: linear-gradient(#3030304b, #3030304b);
+        backdrop-filter: blur(8.5px);
+        width: 100dvw;
+        height: 100dvh;
+        top: 0;
+        left: 0;
+        padding: 0;
+        justify-content: center;
+        transform: translateX(-100%);
+        transition: all 0.4s;
+    }
+    nav ul.actv {
+        transform: translateX(0%);
+    }
+}

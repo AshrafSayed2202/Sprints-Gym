@@ -4,6 +4,7 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="/assets/main.css" />
+        <link rel="stylesheet" href="/assets/responsive.css" />
         <link rel="stylesheet" href="/assets/normalize.css" />
         <link rel="stylesheet" href="/assets/all.min.css" />
         <title>Contact | Sprints Gym</title>
@@ -18,7 +19,13 @@
                     <li><a href="/services">Services</a></li>
                     <li><a href="/about">About Us</a></li>
                     <li><a href="/contact">Contact</a></li>
+                    <span class="nav-btn close-nav" id="navClose">
+                        <i class="fa-solid fa-arrow-left"></i> CLOSE
+                    </span>
                 </ul>
+                <span class="nav-btn" id="navOpen">
+                    <i class="fa-solid fa-bars-staggered"></i>
+                </span>
             </div>
         </nav>
         <header class="page-header">
@@ -30,39 +37,43 @@
                 <span>Contact</span>
             </p>
         </header>
-            <body>
-                <div class="contact_container">
-                    <h2>Contact Us</h2>
-                    <form action="#" method="post">
-                        <div class="form-group">
-                            <label for="name">Your Name:</label>
-                            <input type="text" id="name" name="name" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Your Email:</label>
-                            <input type="email" id="email" name="email" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="phone">Your Phone Number:</label>
-                            <input type="tel" id="phone" name="phone">
-                        </div>
-                        <div class="form-group">
-                            <label for="message">Your Message:</label>
-                            <textarea id="message" name="message" required></textarea>
-                        </div>
-                        <div class="form-group ">
-                            <button type="submit" class="main-btn">Send Message</button>
-                        </div>
-                    </form>
+        <div class="contact_container">
+            <h2>Contact Us</h2>
+            <form action="#" method="post">
+                <div class="form-group">
+                    <label for="name">Your Name:</label>
+                    <input type="text" id="name" name="name" required />
                 </div>
-                <div class="contact-map">
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10457.344294606803!2d-122.82392944047223!3d49.061246159794315!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5485c4b203e03d5d%3A0x4c23955d79438cc2!2sAnytime%20Fitness!5e0!3m2!1sen!2seg!4v1720663257321!5m2!1sen!2seg"
-                        width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <div class="form-group">
+                    <label for="email">Your Email:</label>
+                    <input type="email" id="email" name="email" required />
                 </div>
-        
-        <footer >
+                <div class="form-group">
+                    <label for="phone">Your Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" />
+                </div>
+                <div class="form-group">
+                    <label for="message">Your Message:</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="main-btn">Send Message</button>
+                </div>
+            </form>
+        </div>
+        <div class="contact-map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10457.344294606803!2d-122.82392944047223!3d49.061246159794315!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5485c4b203e03d5d%3A0x4c23955d79438cc2!2sAnytime%20Fitness!5e0!3m2!1sen!2seg!4v1720663257321!5m2!1sen!2seg"
+                width="100%"
+                height="450"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+        </div>
+
+        <footer>
             <div class="lower-foot">
                 <div class="container">
                     <div class="contacts">
@@ -123,4 +134,5 @@
             </div>
         </footer>
     </body>
+    <script src="/assets/main.js"></script>
 </html>

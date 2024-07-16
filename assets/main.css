@@ -12,6 +12,7 @@ html {
 }
 body {
     font-family: "Rubik", sans-serif;
+    line-height: normal !important;
 }
 img {
     object-fit: cover;
@@ -110,6 +111,10 @@ nav ul {
     display: flex;
     gap: 30px;
 }
+nav figure,
+nav ul {
+    margin: 0 !important;
+}
 nav ul li::after {
     content: "";
     width: 100%;
@@ -135,6 +140,16 @@ nav figure {
 }
 nav figure span {
     color: var(--main-color);
+}
+.nav-btn {
+    color: var(--second-color);
+    display: none;
+    font-size: 1.5em;
+}
+.close-nav {
+    position: fixed;
+    top: 50px;
+    left: 50px;
 }
 
 /* End Nav */
@@ -561,7 +576,8 @@ footer .white-txt {
     margin-left: auto;
     margin-right: auto;
 }
-.trainingText, .unlimitedClasses {
+.trainingText,
+.unlimitedClasses {
     text-align: center;
     margin: 30px;
     color: var(--third-color);
@@ -569,12 +585,13 @@ footer .white-txt {
     font-size: 1.5em;
 }
 
-.trainingText h2, .unlimitedClasses h2{
+.trainingText h2,
+.unlimitedClasses h2 {
     position: relative;
 }
 
 .trainingText h2::after {
-    content: '';
+    content: "";
     width: 0%;
     height: 2px;
     top: 50%;
@@ -585,7 +602,7 @@ footer .white-txt {
 }
 
 .trainingText h2::before {
-    content: '';
+    content: "";
     width: 0%;
     height: 2px;
     top: 50%;
@@ -595,28 +612,30 @@ footer .white-txt {
     transition: width 1s;
 }
 
-.trainingText:hover h2::after, .unlimitedClasses:hover h2::after {
+.trainingText:hover h2::after,
+.unlimitedClasses:hover h2::after {
     width: 17%;
 }
 
-.trainingText:hover h2::before, .unlimitedClasses:hover h2::before {
+.trainingText:hover h2::before,
+.unlimitedClasses:hover h2::before {
     width: 17%;
 }
-.trainingSessions{
+.trainingSessions {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 25px;
 }
-.trainingItems img{
+.trainingItems img {
     width: 100%;
     height: 100%;
 }
-.trainingItems{
+.trainingItems {
     position: relative;
     text-align: center;
     overflow: hidden;
 }
-.trainingContext{
+.trainingContext {
     position: absolute;
     bottom: -38%;
     right: 0;
@@ -626,18 +645,18 @@ footer .white-txt {
     transition: bottom 1s;
     border-radius: 10px;
 }
-.trainingItems:hover .trainingContext{
+.trainingItems:hover .trainingContext {
     bottom: 0;
 }
-.trainingContext h3{
+.trainingContext h3 {
     color: var(--main-color);
     margin: 10px;
 }
-.trainingContext p{
+.trainingContext p {
     color: var(--second-color);
     margin: 10px;
 }
-.trainingContext button{
+.trainingContext button {
     border: transparent;
     background: var(--gradiant);
     color: var(--second-color);
@@ -645,18 +664,16 @@ footer .white-txt {
     border-radius: 20px;
     margin: 10px;
 }
-.trainingPart img, .classesPart img{
+.trainingPart img,
+.classesPart img {
     border-radius: 10px;
 }
 
-
-
-
-.classesPart{
+.classesPart {
     margin: 50px;
 }
 .unlimitedClasses h2::after {
-    content: '';
+    content: "";
     width: 0%;
     height: 2px;
     top: 50%;
@@ -667,7 +684,7 @@ footer .white-txt {
 }
 
 .unlimitedClasses h2::before {
-    content: '';
+    content: "";
     width: 0%;
     height: 2px;
     top: 50%;
@@ -676,22 +693,22 @@ footer .white-txt {
     position: absolute;
     transition: width 1s;
 }
-.classesSections{
+.classesSections {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     gap: 25px;
 }
 
-.classesSections img{
+.classesSections img {
     width: 100%;
     height: 100%;
 }
-.classesItems{
+.classesItems {
     position: relative;
     overflow: hidden;
 }
-.classArticle{
+.classArticle {
     position: absolute;
     bottom: -45%;
     right: 0;
@@ -702,15 +719,15 @@ footer .white-txt {
     transition: bottom 0.7s;
     border-radius: 10px;
 }
-.classArticle h3{
+.classArticle h3 {
     color: var(--main-color);
     margin: 10px;
 }
-.classArticle p{
+.classArticle p {
     color: var(--second-color);
     margin: 10px;
 }
-.classArticle button{
+.classArticle button {
     border: transparent;
     background: var(--gradiant);
     color: var(--second-color);
@@ -718,15 +735,9 @@ footer .white-txt {
     border-radius: 20px;
     margin: 10px;
 }
-.classesItems:hover .classArticle{
+.classesItems:hover .classArticle {
     bottom: 0;
 }
-
-
-
-
-
-
 
 /* End Services */
 
