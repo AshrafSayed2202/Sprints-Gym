@@ -1,6 +1,51 @@
-@media (width < 500px) {
-    .page-header h1 {
-        font-size: 3em;
+@media (width < 1201px) {
+    .single-trainer-item img {
+        width: 100%;
+    }
+}
+@media (width < 992px) {
+    .upper-foot {
+        flex-direction: column;
+    }
+    .upper-foot-half {
+        width: 100%;
+    }
+    .upper-foot-half .colored-txt {
+        font-weight: bold;
+    }
+    .lower-foot {
+        padding: 40px 0;
+    }
+    .home-about {
+        flex-direction: column;
+    }
+    .home-about-txt,
+    .home-about-pic {
+        width: 100%;
+    }
+    .home-about-pic {
+        height: 500px;
+    }
+    .gym-plans {
+        flex-direction: column;
+    }
+    .gym-plan-pic,
+    .gym-p-plans {
+        width: 100%;
+    }
+    .col-lg-4 {
+        -ms-flex: 0 0 33.333333%;
+        flex: 0 0 33.333333%;
+        max-width: 33.333333%;
+    }
+    .trainers-container {
+        flex-wrap: wrap;
+        column-gap: 0;
+        row-gap: 70px;
+    }
+    .single-trainer-item {
+        width: calc(100% / 2);
+        padding: 0 15px;
     }
 }
 @media (width < 768px) {
@@ -61,18 +106,45 @@
     .foot-socials {
         padding: 0;
     }
-}
-@media (width < 992px) {
-    .upper-foot {
+    .image-slider {
+        margin-top: 77px;
+    }
+    .image-slider .hero-header {
+        font-size: 2em;
+        text-shadow: #303030 1px 1px;
+    }
+    .home-about {
+        margin: 60px 0;
+    }
+    .gym-p-plans {
         flex-direction: column;
     }
-    .upper-foot-half {
+    .single-trainer-item {
         width: 100%;
     }
-    .upper-foot-half .colored-txt {
-        font-weight: bold;
+}
+@media (width < 500px) {
+    .page-header h1 {
+        font-size: 3em;
     }
-    .lower-foot {
-        padding: 40px 0;
+    .hero-text {
+        text-align: center;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+    }
+    .hero-text p {
+        display: none;
+    }
+    .hero-text span.main-btn {
+        display: none;
+    }
+    .home-about-pic {
+        height: 250px;
+    }
+}
+@media (width < 350px) {
+    .footer-input {
+        display: none;
     }
 }
