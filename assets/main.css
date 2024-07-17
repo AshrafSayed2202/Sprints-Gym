@@ -62,6 +62,7 @@ img {
     font-size: 4em;
     font-weight: 400;
     color: var(--second-color);
+    text-align: center;
 }
 .page-header a {
     text-decoration: none;
@@ -650,16 +651,15 @@ footer .white-txt {
 }
 .trainingContext {
     position: absolute;
-    bottom: -38%;
-    right: 0;
+    bottom: 0;
     left: 0;
     background-color: rgba(0, 0, 0, 0.5);
-    height: 45%;
-    transition: bottom 1s;
+    transform: translateY(calc(100% - 40px));
+    transition: all 0.6s;
     border-radius: 10px;
 }
 .trainingItems:hover .trainingContext {
-    bottom: 0;
+    transform: translateY(0%);
 }
 .trainingContext h3 {
     color: var(--main-color);
@@ -723,14 +723,14 @@ footer .white-txt {
 }
 .classArticle {
     position: absolute;
-    bottom: -45%;
+    bottom: 0%;
     right: 0;
     left: 0;
     background-color: rgba(0, 0, 0, 0.5);
     text-align: center;
-    height: 55%;
-    transition: bottom 0.7s;
+    transition: all 0.7s;
     border-radius: 10px;
+    transform: translateY(calc(100% - 40px));
 }
 .classArticle h3 {
     color: var(--main-color);
@@ -749,7 +749,7 @@ footer .white-txt {
     margin: 10px;
 }
 .classesItems:hover .classArticle {
-    bottom: 0;
+    transform: translateY(0);
 }
 
 /* End Services */
