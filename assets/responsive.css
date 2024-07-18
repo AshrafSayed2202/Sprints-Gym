@@ -2,6 +2,27 @@
     .single-trainer-item img {
         width: 100%;
     }
+    .trainingText h2::after,
+    .unlimitedClasses h2::after,
+    .trainingText h2::before,
+    .unlimitedClasses h2::before {
+        display: none;
+    }
+}
+@media (width < 1225px) {
+    .col-mi {
+        width: calc(100% / 2);
+    }
+    .mi-price {
+        font-size: 35px;
+    }
+    .mi-price span {
+        font-size: 14px;
+    }
+    .membership-item ul li {
+        font-size: 14px;
+        line-height: 50px;
+    }
 }
 @media (width < 992px) {
     .upper-foot {
@@ -46,6 +67,19 @@
     .single-trainer-item {
         width: calc(100% / 2);
         padding: 0 15px;
+    }
+    .classesSections {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+        justify-content: space-between;
+    }
+    .classesItems {
+        width: calc(50% - 15px);
+        margin-bottom: 25px;
+    }
+    .containerTraining {
+        width: 80%;
     }
 }
 @media (width < 768px) {
@@ -141,6 +175,50 @@
     .about-us-img {
         padding: 0;
     }
+    .classesSections {
+        gap: 0px;
+    }
+    .classesItems {
+        width: 100%;
+    }
+    .containerTraining {
+        width: 100%;
+    }
+    .col-mi {
+        width: 65%;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .col-title {
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    .title {
+        font-size: 22px;
+    }
+    .mi-title {
+        padding: 20px 0;
+    }
+    .mi-price {
+        font-size: 30px;
+    }
+    .mi-price span {
+        font-size: 12px;
+    }
+    .membership-item ul li {
+        font-size: 12px;
+        line-height: 40px;
+    }
+    .para {
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+}
+@media (width < 600px) {
+    .trainingSessions {
+        display: flex;
+        flex-direction: column;
+    }
 }
 @media (width < 500px) {
     .page-header h1 {
@@ -165,7 +243,39 @@
         width: 100%;
     }
 }
+@media (width < 480px) {
+    .col-title {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    .title {
+        font-size: 20px;
+    }
+    .mi-title {
+        padding: 15px 0;
+    }
+    .mi-price {
+        font-size: 25px;
+    }
+    .mi-price span {
+        font-size: 10px;
+    }
+    .membership-item ul li {
+        font-size: 10px;
+        line-height: 30px;
+    }
+    .para {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    .col-mi {
+        width: 100%;
+    }
+}
 @media (width < 350px) {
+    .page-header h1 {
+        font-size: 2em;
+    }
     .footer-input {
         display: none;
     }
@@ -191,96 +301,3 @@
         font-size: 0.8em;
     }
 }
-
-/* Start Memberships */
-@media (max-width: 1024px) {
-    .col-mi {
-        width: calc(100% / 2);
-    }
-
-    .mi-price {
-        font-size: 35px;
-    }
-
-    .mi-price span {
-        font-size: 14px;
-    }
-
-    .membership-item ul li {
-        font-size: 14px;
-        line-height: 50px;
-    }
-}
-
-@media (max-width: 768px) {
-    .col-mi {
-        width: 65%; 
-        padding-left: 0;
-        padding-right: 0;
-    }
-
-    .col-title {
-        margin-top: 50px;
-        margin-bottom: 50px;
-    }
-
-    .title {
-        font-size: 22px;
-    }
-
-    .mi-title {
-        padding: 20px 0;
-    }
-
-    .mi-price {
-        font-size: 30px;
-    }
-
-    .mi-price span {
-        font-size: 12px;
-    }
-
-    .membership-item ul li {
-        font-size: 12px;
-        line-height: 40px;
-    }
-
-    .para {
-        margin-top: 50px;
-        margin-bottom: 50px;
-    }
-}
-
-@media (max-width: 480px) {
-    .col-title {
-        margin-top: 30px;
-        margin-bottom: 30px;
-    }
-
-    .title {
-        font-size: 20px;
-    }
-
-    .mi-title {
-        padding: 15px 0;
-    }
-
-    .mi-price {
-        font-size: 25px;
-    }
-
-    .mi-price span {
-        font-size: 10px;
-    }
-
-    .membership-item ul li {
-        font-size: 10px;
-        line-height: 30px;
-    }
-
-    .para {
-        margin-top: 30px;
-        margin-bottom: 30px;
-    }
-}
-/* End Memberships */
